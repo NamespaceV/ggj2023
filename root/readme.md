@@ -16,7 +16,7 @@ install pygame
 
 install pygame zero
 - https://pygame-zero.readthedocs.io/en/stable/installation.html
-("python3 -m pip install pgzero")
+("python3 -m pip install pgzero --user")
 
 run "python3 game.py" in the main directory
 ("pgzrun game.py should also work")
