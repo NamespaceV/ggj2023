@@ -59,8 +59,12 @@ class Root():
 #             self.a = pygame.mouse.get_pos()
 
     def draw(self, screen):
-        alfa = (1 + math.sin(pygame.time.get_ticks()* 2.0 / 1000.0))/2;
-        self.a = lerp(alfa,  (46, 404), (429, 154))
+        phase = pygame.time.get_ticks()* 2.0 / 1000.0
+        phaseB = phase + math.pi/2
+        alfa = (1 + math.sin(phase))/2
+        alfaB = (1 + math.sin(phaseB))/2
+        self.a = lerp(alfa, (46, 404), (429, 154))
+        self.b = lerp(alfaB, (46, 404), (429, 154))
         prev = self.a
         pct = 0
         SEGMENTS = 30
@@ -94,9 +98,10 @@ def update():
     if (hero.y > LAND_LEVEL):
         hero.y = LAND_LEVEL
         actorV = 0
-    if keyboard.kp5 and not wasAtt:
+    isAtt = keyboard.kp5 or keyboard.k
+    if isAtt and not wasAtt:
         attacks.append(Attack())
-    wasAtt = keyboard.kp5
+    wasAtt = isAtt
     for a in attacks:
         a.update()
     attacks = list(filter( lambda a : a.lifetime > 0, attacks))
