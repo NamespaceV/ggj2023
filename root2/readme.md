@@ -23,6 +23,7 @@ run "python3 game.py" in the main directory
 
 ## game info
 
-Simulator of roots growing in the ground.
+Logic puzzle game demo that simulates roots growing in the ground.
+Get all the water, don't collect poison.
 Coded on rapsberry pi with low understanig of python 
 and pygame so don't expect much.
