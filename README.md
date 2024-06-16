@@ -8,9 +8,13 @@ see https://v3.globalgamejam.org/2023/games
 
 On site jam in Warsaw, Poland organised by Polygon students organisation
 
-## I developped those on rapsbery pie
+https://v3.globalgamejam.org/2023/jam-sites/polyjam-2023
 
-I took a rapsbery pie as main development and runtime machine :) and tried develloping something in pygame I had very basic understanding of
+## I developped 3 small projects on a rapsbery pie
+
+https://v3.globalgamejam.org/2023/games/3-pi-experiments-5
+
+I didnt have a laptop, so I took a rapsbery pie as main development and runtime machine :) and tried developing something in pygame I had very basic understanding of
 
 Games are crap but i had fun. Internet browser barely worked on the pie as it was too weak :) but simple python ide that came preinstalled on the pie was reasonably usable with pygame.
 
